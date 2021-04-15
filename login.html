@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/SignUp</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" />
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <a href="index.html">
+                <span>Clothing </span><span style = "color:maroon; font-size: 60px; font-style: italic;">&</span><span> Fashion </span>
+            </a>
+            <a href="men.html">
+                <span class="font">MEN</span>
+            </a>
+            <a href="women.html">
+                <span class="font">WOMEN</span>
+            </a>
+            <a href="sale.html">
+                <span class="font">SALE</span>
+            </a>
+            <a href="#">
+                <input type="search" class="search_bar" name="search" placeholder=" Search Product">
+            </a>
+            <a href="login.html">
+                <span class="font"><i class="fa fa-sign-in" aria-hidden="true"></i>LOGIN/SIGNUP</span>
+            </a>
+            <a href="">
+              <span class="font"><i class="fa fa-shopping-cart" aria-hidden="true"></i>CART</span>
+            </a>
+		    <span class="mobile_menu_bar">
+                <a onclick="document.getElementById('logo_1').style.display='block';"><i class="fa fa-bars" aria-hidden="true"></a></i>
+              </span>
+              </div>
+          <div class="logo_1" id="logo_1">
+            <a onclick="document.getElementById('logo_1').style.display='none';"><i class="fa fa-times" aria-hidden="true"></i></a><br>
+            <a href="men.html">
+              <span class="font">MEN</span><br>
+          </a>
+          <a href="women.html">
+              <span class="font">WOMEN</span><br>
+          </a>
+          <a href="sale.html">
+              <span class="font">SALE</span><br>
+          </a>
+          <a href="login.html">
+            <span class="font"><i class="fa fa-sign-in" aria-hidden="true"></i>LOGIN/SIGNUP</span><br>
+        </a>
+        <a href="">
+          <span class="font"><i class="fa fa-shopping-cart" aria-hidden="true"></i>CART</span>
+        </a>
+          </div>
+    </nav>
+    
+    <div class="text">
+      <h2>Login/SignUp</h2>
+    </div>
+<div class="login_form">
+    <form onsubmit="return validation()" name="submit-googlesheet" method="POST">
+
+        <input type="text" id="name" name="Name" placeholder="Name"><br>
+        <span id="errorname" style="color: red;font-size: 10px"></span>
+
+        <input type="email" id="email" name="Email" placeholder="Email ID"><br>
+        <span id="erroremail" style="color: red;font-size: 10px"></span>
+
+        <input type="number" id="number" name="Number" placeholder="Contact Number"><br>
+        <span id="errornumber" style="color: red;font-size: 10px"></span>
+
+        <select name="Gender" required>
+        	<option>--Gender--</option>
+        	<option>Male</option>
+        	<option>Female</option>
+        	<option>Others</option>
+        </select>
+
+        <input type="password" id="password" name="Password" placeholder="New password"><br>
+        <span id="errorpassword" style="color: red;font-size: 10px"></span>
+
+        <input type="text" id="cpassword" name="Confirm Password" placeholder="Confirm password">
+        <span id="errorcpassword" style="color: red;font-size: 10px"></span><br>
+
+        <button type="submit">Register</button>
+        <button type="reset">Refresh</button>
+
+	</form>
+</div>
+
+<footer class="footer">
+    <a href="mailto:surbhichhaya22@gmail.com"><span class="font"><i class="fa fa-envelope " aria-hidden="true"></i>Mail Us</span></a>
+
+        <a href="tel:620514025"><span class="font"><i class="fa fa-phone" aria-hidden="true"></i>Contact Us</span></a>
+
+        <a href="https://wa.me/6205140325"><span class="font"><i class="fa fa-whatsapp" aria-hidden="true"></i>Whatsapp</span></a>
+
+        <a href="https://www.instagram.com/surbhi_chhaya/"><span class="font"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</span></a><br>
+        
+    <div class="foot">
+      &copy  <a href=""><span class="font">About Us</span></a>
+      <a href=""><span class="font">Blogs</span></a>
+    </div>
+
+  </footer>
+
+<script type="text/javascript">
+	function validation(){
+		var username = document.getElementById('name').value;
+		var email = document.getElementById('email').value;
+		var number = document.getElementById('number').value;
+		var password = document.getElementById('password').value;
+		var cpassword = document.getElementById('cpassword').value;
+
+		var namecheck = /^[A-Za-z ]{3,50}$/;
+		var emailcheck = /^[A-Za-z0-9._]{3,}@[A-Za-z0-9]{3,}[.]{1}[A-Za-z.]{3,}$/;
+		var numbercheck = /^[6789][0-9]{9}$/;
+		var passwordcheck = /^(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z0-9_!@#$%^&*]{8,16}$/;
+
+		if (namecheck.test(username)) {
+			document.getElementById('errorname').innerHTML = " ";
+		}
+		else{
+			document.getElementById('errorname').innerHTML = "**INVALID**";
+			return false;
+		}
+		if (emailcheck.test(email)) {
+			document.getElementById('erroremail').innerHTML = " ";
+		}
+		else{
+			document.getElementById('erroremail').innerHTML = "**INVALID**";
+			return false;
+		}
+		if (numbercheck.test(number)) {
+			document.getElementById('errornumber').innerHTML = " ";
+		}
+		else{
+			document.getElementById('errornumber').innerHTML = "**INVALID**";
+			return false;
+		}
+		if (passwordcheck.test(password)) {
+			document.getElementById('errorpassword').innerHTML = " ";
+		}
+		else{
+			document.getElementById('errorpassword').innerHTML = "**INVALID**";
+			return false;
+		}
+		if (cpassword.match(password)) {
+			document.getElementById('errorcpassword').innerHTML = " ";
+		}
+		else{
+			document.getElementById('errorcpassword').innerHTML = "**password not matching**";
+			return false;
+		}
+	}
+</script>
+
+<script type="text/javascript">
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx5Dl4OXZvJyuxssarRvfqRYw6jvIbP5VoNCPCquaxV_8QC1gobDgLEWHAsCdfgwrWeEw/exec'
+                const form = document.forms['submit-googlesheet']
+
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => alert("Login Successfully"))
+                    .catch(error => console.error('Error!', error.message))
+                })
+</script>
+
+</body>
+</html>

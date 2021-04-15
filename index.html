@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" />
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <a href="index.html">
+                <span>Clothing </span><span style = "color:maroon; font-size: 60px; font-style: italic;">&</span><span> Fashion </span>
+            </a>
+            <a href="men.html">
+                <span class="font">MEN</span>
+            </a>
+            <a href="women.html">
+                <span class="font">WOMEN</span>
+            </a>
+            <a href="sale.html">
+                <span class="font">SALE</span>
+            </a>
+            <a href="#">
+                <input type="search" class="search_bar" name="search" placeholder=" Search Product">
+            </a>
+            <a href="login.html">
+                <span class="font"><i class="fa fa-sign-in" aria-hidden="true"></i>LOGIN/SIGNUP</span>
+            </a>
+            <a href="">
+              <span class="font"><i class="fa fa-shopping-cart" aria-hidden="true"></i>CART</span>
+            </a>
+            <span class="mobile_menu_bar">
+              <a onclick="document.getElementById('logo_1').style.display='block';"><i class="fa fa-bars" aria-hidden="true"></a></i>
+            </span>
+		    </div>
+        <div class="logo_1" id="logo_1">
+          <a onclick="document.getElementById('logo_1').style.display='none';"><i class="fa fa-times" aria-hidden="true"></i></a><br>
+          <a href="men.html">
+            <span class="font">MEN</span><br>
+        </a>
+        <a href="women.html">
+            <span class="font">WOMEN</span><br>
+        </a>
+        <a href="sale.html">
+            <span class="font">SALE</span><br>
+        </a>
+        <a href="login.html">
+          <span class="font"><i class="fa fa-sign-in" aria-hidden="true"></i>LOGIN/SIGNUP</span><br>
+      </a>
+      <a href="">
+        <span class="font"><i class="fa fa-shopping-cart" aria-hidden="true"></i>CART</span>
+      </a>
+        </div>
+  
+    </nav>
+    
+    <div class="text">
+      <h2>Fashion For Men And Women</h2>
+    </div>
+
+    <div class="slider">
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      </ol>
+    
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="pic_1.jpg" alt="Men's Fashion" width="100%">
+          <div class="carousel-caption">
+            <a href="men.html">
+            Men's Fashion 
+            </a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="pic_2.jpg" alt="Women's Fashion" width="100%">
+          <div class="carousel-caption cc_1">
+            <a href="women.html">
+            Women's Fashion
+            </a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="pic_3.jpg" alt="Men's Clothing" width="100%">
+          <div class="carousel-caption">
+            <a href="men.html">
+            Men's Clothing
+            </a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="pic_4.jpg" alt="Women's Clothing" width="100%">
+          <div class="carousel-caption">
+            <a href="women.html">
+            Women's Clothing
+            </a>
+          </div>
+        </div>  
+      </div>
+
+      <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+      <div class="t_1">
+        <h2>SALES (click below picture to shop on awesome sale)</h2>
+      </div>
+      <div class="container">
+        <a href="sale.html">
+        <img src="sale.jpg" alt="sale">
+        </a>
+      </div>
+
+    <div class="t_1">
+      <h2>Men's Fashion</h2>
+    </div>  
+      
+      <div class="container_1">
+        <div class="card c_1">
+          <a href="shirt.html">
+          <h3>Shirts N T-shirts </h3>
+          </a>
+        </div>
+        <div class="card c_2">
+          <a href="jeans.html">
+          <h3>Jeans N Pants </h3>
+          </a>
+        </div>
+      </div>
+      <div class="container_2">  
+        <div class="card c_3">
+          <a href="watch.html">
+          <h3>Watches N Sunglasses </h3>
+          </a>
+        </div>
+        <div class="card c_4">
+          <a href="shoe.html">
+          <h3>Shoes N Slippers </h3>
+          </a>
+        </div>
+      </div>
+
+      <div class="t_1">
+        <h2>Women's Fashion</h2>
+      </div>
+      
+      <div class="container_3">
+        <div class="card c_1">
+          <a href="tops.html">
+            <h3>Tops N Tees </h3>
+            </a>
+        </div>
+        <div class="card c_2">
+          <a href="skirt.html">
+          <h3>Skirts N shorts </h3>
+          </a>
+        </div>
+      </div>
+      <div class="container_4">  
+        <div class="card c_3">
+          <a href="bag.html">
+          <h3>Bags N Clutches </h3>
+          </a>
+        </div>
+        <div class="card c_4">
+          <a href="boots.html">
+          <h3>Sandals N Boots </h3>
+          </a>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <a href="mailto:surbhichhaya22@gmail.com"><span class="font"><i class="fa fa-envelope " aria-hidden="true"></i>Mail Us</span></a>
+
+		    <a href="tel:620514025"><span class="font"><i class="fa fa-phone" aria-hidden="true"></i>Contact Us</span></a>
+
+		    <a href="https://wa.me/6205140325"><span class="font"><i class="fa fa-whatsapp" aria-hidden="true"></i>Whatsapp</span></a>
+
+		    <a href="https://www.instagram.com/surbhi_chhaya/"><span class="font"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</span></a><br>
+		    
+        <div class="foot">
+          &copy  <a href=""><span class="font">About Us</span></a>
+          <a href=""><span class="font">Blogs</span></a>
+        </div>
+
+      </footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+</body>
+</html>
